@@ -1,4 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+:root {
+    --x-padding: 200px;
+    --white-text: #F9FAF8;
+    --off-white-text: #e5e7eb;
+}
+
 
 body {
     font-family: Roboto, sans-serif;
@@ -15,7 +22,7 @@ header {
     color: #F9FAF8;
     justify-content: space-between;
     align-items: center;
-    padding: 0 32px;
+    padding: 0 var(--x-padding);
 }
 
 footer {
@@ -50,11 +57,12 @@ a {
 .hero {
     display: flex;
     background-color: #1F2937;
-    justify-content: center;
-    align-items: center;
-    padding-left: 100px;
-    padding-right: 100px;
+    justify-content: center; /* works on the current axis */
+    align-items: stretch; /* works on the off-axis */
+    padding: 100px var(--x-padding);
     flex: 1;
+    gap: 32px;
+    color: white;
 }
 
 .hero-left {
@@ -65,9 +73,13 @@ a {
 }
 
 .hero-right {
-    background-color: #e5e7eb;
+    background-color: #939393;
     padding: 24px;
+    display: flex;
     flex: 1;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
 h1 {
@@ -75,11 +87,7 @@ h1 {
     font-weight: bolder;
     color: #f9faf8;
     margin-bottom: 0;
-}
-
-text {
-    font-size: 18px;
-    color: #e5e7eb;
+    margin-top: 0;
 }
 
 button {
@@ -93,6 +101,7 @@ button {
 
 h2 {
     text-align: center;
+    padding: 24px;
 }
 
 h3 {
@@ -104,19 +113,59 @@ h3 {
     font-size: 36px;
     font-style: italic;
     color: #1f2937;
-    padding: 70px 120px;
+    padding: 70px var(--x-padding);
 }
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-wrap: wrap;
+    gap: 32px;
+    margin: 80px;
+    text-align: center;
+}
+
+.sub-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: min-content;
+    flex: 1;
 }
 
 .card {
     justify-content: center;
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     border: 3px solid #3882f6;
     border-radius: 8px;
+}
+
+.attribution {
+    text-align: right;
+}
+
+.call-to-action {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 48px var(--x-padding);
+    color: #f9faf9;
+}
+
+.box {
+    display: flex;
+    background-color: #3882f6;
+    border-radius: 10px;
+    padding: 24px 100px;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.border {
+    border: 2px solid #f9faf8;
+    flex: 1;
 }
