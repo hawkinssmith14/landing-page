@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: Roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    background-color: #1F2937;
+    color: #F9FAF8;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+}
+
+footer {
+    height: 72px;
+    background: #1F2937;
+    color: #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    /* this removes the dots on the list items*/
+    list-style-type: none;
+    display: flex;
+    gap: 16px;
+  }
+
+.header-left {
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: bold;
+}
+
+a {
+    font-size: 18px;
+    /* this removes the line under the links */
+    text-decoration: none;
+    color: #e5e7eb;
+}
+
+.hero {
+    display: flex;
+    background-color: #1F2937;
+    justify-content: center;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    flex: 1;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.hero-right {
+    background-color: #e5e7eb;
+    padding: 24px;
+    flex: 1;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #f9faf8;
+    margin-bottom: 0;
+}
+
+text {
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+button {
+    background: #3882f6;
+    border: 1px solid #3882f6;
+    border-radius: 6px;
+    color: white;
+    padding: 4px 20px;
+    width: fit-content;
+  }
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    font-weight: lighter;
+}
+
+.quote {
+    background-color: #e5e7eb;
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+    padding: 70px 120px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    border: 3px solid #3882f6;
+    border-radius: 8px;
+}
